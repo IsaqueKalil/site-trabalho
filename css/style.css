@@ -232,6 +232,8 @@ a{
     background: #FFFFFF;
     color: red !important;
 }
+/* 
+ADAPTANDO PARA OUTROS DISPOSITIVOS (CELULAR,TABLET)*/
 
 @media (max-width: 768px) {
 
