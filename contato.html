@@ -7,6 +7,9 @@
     <title>Currículo Online - Contato</title>
 
     <script>
+/* VERIFICA SE O USUÁRIO ESCOLHEU O TEMA ESCURO ANTES E, SE SIM, APLICA AUTOMATICAMENTE O MODO ESCURO PARA A PÁGINA.
+*/
+        
     (function() {
         if (localStorage.getItem("theme") === "dark") {
             document.documentElement.classList.add("dark-mode");
@@ -56,7 +59,7 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
-</main>
+</main> 
 
 
 <p id="msg-status"></p>
