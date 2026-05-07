@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Online - Sobre Mim</title>
+
+    <script>
+    (function() {
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    })();
+    </script>
+
+    <style>
+    html.dark-mode {
+        background: #121212;
+    }
+</style>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+            <h1>Currículo<span class="white">Online</span></h1>
+        </div>
+    
+        <div id="menu">
+            <a href="index.html" class="active">Sobre Mim</a>
+            <a href="formação.html">Formação</a>
+            <a href="portfólio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+    </div>
+
+    <div id="content">
+
+        <div id="posts">
+
+            <!-- abertura postagem -->
+            <div class="post">
+                <h2>QUEM SOU?</h2>
+                <span class="data-post">
+                </span>
+                <p>
+                    Meu nome é Isaque Kalil Grillo de Almeida, tenho 19 anos e atualmente faço faculdade na UNINTER de Ciências da Computação. Meus hobbies favoritos são assistir futebol, jogar videogame, estudar programação e ir para a academia. Comecei a me interessar pela área no começo do ano passado e estou gostando do que estou aprendendo e fazendo, todo o dia aprendo coisas novas para meu futuro acadêmico e meu futuro de carreira. 
+                </p>
+                
+            </div>
+            <!--fechamento postagem -->
+
+        </div>
+    
+      
+        <div id="footer">
+            Todos os direitos reservados - ISAQUE KALIL GRILLO DE ALMEIDA
+        </div>
+
+    </div>
+
+    <button id="theme-button" onclick="toggleTheme()">🌙 Tema</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

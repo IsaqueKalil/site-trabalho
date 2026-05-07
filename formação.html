@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Online - Formação</title>
+
+    <script>
+    (function() {
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    })();
+    </script>
+
+    <style>
+    html.dark-mode {
+        background: #121212;
+    }
+</style>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+           <h1 style="color: #FFFFFF;">FORMAÇÃO</h1>
+        </div>
+    
+        <div id="menu">
+            <a href="index.html">Sobre Mim</a>
+            <a href="formação.html" class="active">Formação</a>
+            <a href="portfólio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+    </div>
+
+    <div id="content">
+
+        <div id="posts">
+
+            <!-- abertura postagem -->
+            <div class="post">
+                <h2>MINHA FORMAÇÃO</h2>
+                <p>
+                    No momento estou fazendo bacharelado em Ciências da Computação na UNINTER, estou no 3o semestre e estou cursando por fora na hashtag treinamentos para me especializar em Python e na área de dados, sou nível avançado em Inglês e no final de 2024 me formei no ensino médio na escola Centro Educacional Prisma.
+                </p>
+            </div>
+            <!--fechamento postagem -->
+
+    
+        <div id="footer">
+            Todos os direitos reservados - ISAQUE KALIL GRILLO DE ALMEIDA
+        </div>
+
+    </div>
+    <button id="theme-button" onclick="toggleTheme()">🌙 Tema</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

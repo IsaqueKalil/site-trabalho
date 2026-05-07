@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Online - Portfólio</title>
+
+    <script>
+    (function() {
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    })();
+    </script>
+
+    <style>
+    html.dark-mode {
+        background: #121212;
+    }
+</style>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+           <h1 style="color: #FFFFFF;">PORTFÓLIO</h1>
+        </div>
+    
+        <div id="menu">
+            <a href="index.html">Sobre Mim</a>
+            <a href="formação.html">Formação</a>
+            <a href="portfólio.html" class="active">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+    </div>
+
+    <div id="content">
+
+        <div id="posts">
+
+            <!-- abertura postagem -->
+            <div class="post">
+                <h2>PROJETO</h2>
+                <p>
+                   Aqui está um exemplo de projeto que fiz em Python, O projeto consiste em criar um chatbot com ia sendo hosteado no streamlit:  
+                </p>
+            <a href="https://github.com/IsaqueKalil/chatbot-com-ia/tree/main">
+                Ver projeto no GitHub
+            </a>
+
+            </div>
+            <!--fechamento postagem -->
+            <div class="post">
+                <h2>OUTRO PROJETO</h2>
+                <p>
+                   Neste aqui fiz insights de dados utilizando o pandas para ler a base de dados e o plotly para criar gráficos interativos com os dados em questão tratados e limpos: 
+                </p>
+            <a href="https://github.com/IsaqueKalil/analisando-dados-com-python">
+                Ver projeto no GitHub
+            </a>
+
+            </div>
+
+        <div id="footer">
+            Todos os direitos reservados - ISAQUE KALIL GRILLO DE ALMEIDA
+        </div>
+
+    </div>
+    <button id="theme-button" onclick="toggleTheme()">🌙 Tema</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

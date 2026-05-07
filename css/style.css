@@ -1,0 +1,323 @@
+/*
+****** FORMATAÇÕES DOS BOTÕES ******
+*/
+
+#theme-button {
+    position: fixed;
+    top: 3px;
+    right: 15px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+}
+
+form button {
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.post form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: left;
+    clear: both;
+}
+
+
+
+.post form button {
+    width: 100%;
+    max-width: 200px;
+    align-self: flex-start;
+}
+
+.post input, .post textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.post label {
+    display: block;
+    margin-bottom: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+button:hover {
+    background: #666;
+}
+
+
+/*
+****** FORMATAÇÕES GENÉRICAS ******
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:salmon;
+    transition: background-color 0.2s, color 0.2s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+}
+
+h2{
+    color: red;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+h3{
+    color: #565656;
+    background: #CCCCCC;
+    padding: 5px;
+}
+
+/*
+****** HEADER ******
+*/
+#header{
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+#logo, #menu{
+    padding: 10px;
+}
+
+#menu a:hover{
+    background: #444;
+}
+
+#header a:link, #header a:visited{
+    color: #FFFFFF ;
+    padding: 8px 12px;
+}
+
+#header a:hover{
+    color: red;
+    background: #FFFFFF;
+    text-decoration: none;
+}
+
+.white{
+    color: #FFFFFF;
+}
+
+/*
+****** CONTENT ******
+*/
+#content{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#posts{
+    width: 100%;
+    float: none;
+}
+
+.post{
+    padding: 20px;
+    background: #FFFFFF;
+    text-align: justify;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+}
+
+.post p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.post {
+    padding: 60px; 
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    text-align: justify;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%; 
+    max-width: 700px;
+}
+
+
+.post p {
+    font-size: 1.4rem; 
+    line-height: 1.8;   
+    color: #333;
+    margin-top: 15px;
+}
+
+.post h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: red;
+    border-bottom: 2px solid red;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.data-post{
+    font-size: 13px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+/*
+****** FORMATAÇÃO SEÇÕES ******
+*/
+a{
+    text-decoration: none;
+}
+
+
+
+/*
+****** FOOTER ******
+*/
+#footer{
+    width: 100%;
+    text-align: center;
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    background: #FFFFFF;
+    color: red;
+    margin-top: auto;
+}
+
+.active {
+    background: #FFFFFF;
+    color: red !important;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #menu a {
+        margin: 5px 0;
+        border-radius: 6px;
+        display: block;
+        text-align: center;
+    }
+
+    #posts {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+
+/*
+****** DARK MODE ******
+*/
+
+/* HEADER */
+.dark-mode #header {
+    background-color: #222;
+    padding: 20px;
+}
+
+/* TEXTOS */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: white;
+}
+
+.dark-mode p {
+    color: #ddd;
+}
+
+.dark-mode .post {
+    background: #1e1e1e;
+    color: #ddd;
+}
+
+.dark-mode .data-post {
+    border-bottom: 1px solid #555;
+}
+
+.dark-mode #menu a:visited {
+    color: black;
+}
+
+/* FOOTER */
+.dark-mode #footer {
+    background: #1e1e1e;
+    color: #FFFFFF;
+}
+
+.dark-mode body {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.dark-mode #menu a:link {
+    color: #FFFFFF;
+}
+
+.dark-mode #menu a:hover {
+    color: #FFFFFF;
+    background: #555;
+}
+
+.dark-mode .active {
+    background: #333;
+    color: #FFFFFF !important;
+}
+
+.dark-mode form button {
+    background: #555;
+}
+
+
+
+
+
